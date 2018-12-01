@@ -1,8 +1,9 @@
 package prob3;
 
-public class Prob3 {
+public class Prob3 extends CurrencyConverter{
 
 	public static void main(String[] args) {
+		
 		CurrencyConverter.setRate( 1118.70 );
 		
 		double dollar = CurrencyConverter.toDollar( 1000000 );
@@ -10,5 +11,7 @@ public class Prob3 {
 		
 		double krw = CurrencyConverter.toKRW( 100 );
 		System.out.println( "백달러는 " + krw + "원 입니다." );		
+		
+		
 	}
 }
